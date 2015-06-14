@@ -52,6 +52,6 @@ end
 
 private
 def post_params
-  params.require(:todo_list).permit(:title, :description)
+  params.require(:post).permit(:name, :order, :extra)
 end
 end
