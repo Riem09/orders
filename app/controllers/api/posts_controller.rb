@@ -52,6 +52,6 @@ end
 
 private
 def post_params
-  params.require(:post).permit(:name, :order, :extra)
+  params.require(:post).permit(:name, :order, :extra, :users_id)
 end
 end
