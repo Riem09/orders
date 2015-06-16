@@ -1,8 +1,11 @@
 class Api::PostsController < ApplicationController
 skip_before_filter :verify_authenticity_token
 def index
-render json: Post.where(users_id: params[:users_id])
-
+ if params[:user_request]
+ render json: Post.where(users_id: params[:user_request])
+ else
+ render json: Post.all
+ end
 end
 
 def show

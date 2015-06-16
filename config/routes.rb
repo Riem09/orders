@@ -3,9 +3,8 @@ Rails.application.routes.draw do
   resources :users
 
   namespace :api  do
-  resources :users do
   resources :posts
-  end
+  resources :users
   end
 
   root 'posts#index'
