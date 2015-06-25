@@ -1,18 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @post.name %>
-</p>
-
-<p>
   <strong>Order:</strong>
   <%= @post.order %>
 </p>
 
 <p>
   <strong>Extra:</strong>
-  <%= @post.extra %>
+  <%= @post.final_cost %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
