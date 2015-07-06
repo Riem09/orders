@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   namespace :api  do
   resources :posts
   resources :users
+  resources :locations
   end
 
   root 'posts#index'
