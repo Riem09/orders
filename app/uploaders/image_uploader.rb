@@ -50,5 +50,5 @@ class ImageUploader < CarrierWave::Uploader::Base
     else
     @name = @filename
   end
-
+  end
 end
